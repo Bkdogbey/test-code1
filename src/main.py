@@ -1,5 +1,6 @@
 import yaml
-from data.process import power, square
+from data.process import cube, power, square
+from datasets.simple_dataset import sqrt
 from utils import skip_run
 
 # The configuration file
@@ -17,3 +18,8 @@ with skip_run("skip", "Step 2") as check, check():
 with skip_run("skip", "Step 3") as check, check():
     y = power(4)
     print(y)
+
+with skip_run("skip", "Step 4") as check, check():
+    y = cube(4)
+    root_y = sqrt(y)
+    print(y, root_y)
