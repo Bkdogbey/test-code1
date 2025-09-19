@@ -20,3 +20,9 @@ def cube(x):
 
 def power(x):
     return f"Square of {x}: {square(x)} and Cube of {x}: {cube(x)}"
+
+
+def log(x):
+    import math
+
+    return math.log(x)
