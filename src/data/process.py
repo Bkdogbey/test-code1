@@ -21,5 +21,7 @@ def cube(x):
 def power(x):
     return f"Square of {x}: {square(x)} and Cube of {x}: {cube(x)}"
 
+
+# TODO: Add docstring to this function.
 def sin(x):
-    return x - (x**3)/6 + (x**5)/120 - (x**7)/5040
+    return x - (x**3) / 6 + (x**5) / 120 - (x**7) / 5040
